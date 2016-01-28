@@ -15,10 +15,20 @@
 }
 .marge{
   margin:0 2.5em;
+  color:#404040;
+}
+h2{
+  font-weight: bold;
+  font-size: 2.5em;
+}
+h3{
+  font-weight: bold;
+  font-size: 1.8em;
 }
 .background{
   background-color:#2056ac;
   margin-bottom: 6px;
+  max-width: 100%;
 }
 header{
   color:white;
@@ -35,36 +45,130 @@ header{
   height: 2.5em;
   line-height: 2.5em;
   list-style: none;
-  width: 20%
+  width: 20%;
+  transition: all 1s;
+  border-radius: 6px 6px 0 0;
 }
 
 #menu li a{
   text-decoration: none;
   color: #fff;
+  transition: all 1s;
 }
 #menu li:hover{
-  border-radius: 6px;
+  border-radius: 6px 6px 0 0;
   background-color: #fff;
+  box-shadow: 0 0 8px white;
 }
 #menu li:hover > a{
   color : #2056ac;
 }
 nav{
-  width: 50em;
+  width: 70%;
   margin:0 auto;
 }
 #img{
-  width:75em;
   padding:4em 0 0 0;
 }
-#text, .art1, .art2{
+#img img{
+  border-radius: 3px;
+  max-width:100%;
+  box-shadow: 0 0 10px;
+  transition: all 1s;
+}
+#img img:hover{
+  opacity: 0.6;
+}
+#text, .art1 {
   text-align: center;
   padding: 4em;
   border-bottom: solid 0.2em #D0D0D0;
  }
+.art2, #icones{
+   text-align: center;
+   padding: 4em;
+ }
 .art1 article{
   padding:0 2.5em;
   text-align: center;
-  float:left;
-  max-width: 33%;
+  display: inline-block;
+  width: 28%;
 }
+p {
+  padding: 2.5em 0;
+}
+.bouton{
+  display: inline-block;
+  border-radius: 2px;
+  width: 8em;
+  height: 2.5em;
+  background-color: #2056ac;
+  transition: all 1s;
+}
+.bouton:hover{
+  box-shadow: 0 0 3px #2056ac;
+  background-color: white;
+}
+.bouton:hover >a{
+  color:#2056ac;
+}
+.bouton a{
+  line-height: 2.5em;
+  text-decoration: none;
+  color:white;
+  transition: all 2s;
+}
+.art2 article{
+  padding:0 2.5em;
+  text-align: center;
+  display: inline-block;
+  width: 23%;
+}
+#icones i{
+  font-size: 3.43em;
+  color:#64ABD1;
+}
+.icones {
+  float: left;
+  max-width: 32%;
+  padding:0 5.5em;
+}
+#icones{
+  background-color:#e3f0f7;
+}
+footer{
+  padding: 4em;
+  text-align: center;
+  background-color: #2056ac;
+  border-top: solid 10px #4A5ABA;
+  color: white;
+}
+footer i{
+  padding: 0.5em;
+}
+footer a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+footer div{
+  background-color: #64ABD1;
+  line-height: 2em;
+  width: 2em;
+  height: 2em;
+  display: inline-block;
+}
+@media (max-width:1000px) {
+   .art2 article{
+     min-width: 100%;
+     display:block;
+   }
+   .art1 article{
+     min-width: 100%;
+     display: block;
+   }
+   .icones{
+     min-width: 100%;
+     display: block;
+   }
+ }
